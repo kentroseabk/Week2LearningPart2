@@ -12,15 +12,15 @@ T NumberPower(T base, int power);
 int GetBaseNumber();
 
 template <typename T>
-T NumberPower(T base, int power) {
-    if (power == 1) {
-        return base;
-    }
+T NumberPower(T base, int power) 
+{
+    if (power == 1) return base;
 
     return base * NumberPower(base, power - 1);
 }
 
-int GetBaseNumber() {
+int GetBaseNumber() 
+{
     cout << "What is your base number?" << endl;
     
     int base;
@@ -30,7 +30,8 @@ int GetBaseNumber() {
     return base;
 }
 
-int GetPowerNumber() {
+int GetPowerNumber() 
+{
     cout << "What is your power number?" << endl;
 
     int power;
